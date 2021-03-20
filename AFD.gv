@@ -1,0 +1,29 @@
+digraph Graf {
+	rankdir=LR size="8,5"
+	node [shape=circle]
+	""
+	"" -> A
+	"" -> A
+	"" -> A
+	node [shape=doublecircle]
+	E
+	E
+	E
+	node [shape=circle]
+	A -> B [label="ε"]
+	A -> A [label=b]
+	A -> C [label=a]
+	B -> D [label="ε"]
+	B -> E [label=b]
+	B -> C [label=a]
+	C -> D [label="ε"]
+	C -> B [label=b]
+	C -> C [label=a]
+	D -> D [label="ε"]
+	D -> E [label=b]
+	D -> C [label=a]
+	E -> D [label="ε"]
+	E -> E [label=b]
+	E -> C [label=a]
+	node [shape=none]
+}
